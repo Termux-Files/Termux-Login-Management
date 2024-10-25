@@ -10,11 +10,11 @@ cat << 'EOF' > ~/.loginScripts/after_logout.sh
 # Function to handle options after logging out
 
 # Setting color functions for aesthetic consistency
-function blue() { echo -e "\e[01;34m$1\e[0m"; }
+function purple() { echo -e "\e[01;35m$1\e[0m"; }
 function green() { echo -e "\e[01;32m$1\e[0m"; }
 function yellow() { echo -e "\e[01;33m$1\e[0m"; }
 
-blue "Choose your next action:"
+purple "Choose your next action:"
 green "1) Return to Termux"
 green "2) Exit Termux"
 read -p "$(yellow 'Enter your choice [1-2]: ')" choice
@@ -42,11 +42,11 @@ cat << 'EOF' > ~/.loginScripts/initial_prompt.sh
 # Function to display the initial login prompt
 
 # Setting color functions for aesthetic consistency
-function blue() { echo -e "\e[01;34m$1\e[0m"; }
+function purple() { echo -e "\e[01;35m$1\e[0m"; }
 function green() { echo -e "\e[01;32m$1\e[0m"; }
 function yellow() { echo -e "\e[01;33m$1\e[0m"; }
 
-blue "Welcome! Choose your session:"
+purple "Welcome! Choose your session:"
 green "1) Login to Debian"
 green "2) Login to ArchLinux"
 green "3) Stay in Termux"
